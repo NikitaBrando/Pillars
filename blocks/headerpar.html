@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="stylepar.css">
+</head>
+<body>
+	
+<section>
+	<img src="imagge/Sky.png" id="bg">
+	<img src="imagge/moon.png" id="moon">
+	<img src="imagge/Pillars.png" id="mountain">
+	<img src="imagge/Water.png" id="road">
+
+	<h2 id="text">Ленские столбы</h2>
+
+	<script type="text/javascript">
+		let bg = document.getElementById("bg");
+		let moon = document.getElementById("moon");
+		let mountain = document.getElementById("mountain");
+		let road = document.getElementById("road");
+		let text = document.getElementById("text");
+
+		window.addEventListener('scroll', function(){
+			var value = window.scrollY;
+
+			bg.style.top = value * 0.5 + 'px';
+			moon.style.left = value * 0.5 + 'px';
+			mountain.style.top = value * -0.1 + 'px';
+			road.style.top = value * 0 + 'px';
+			text.style.top = value * 1 + 'px';
+		})
+	</script>
+</section>
+
+</body>
+</html>
